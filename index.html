@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>æv</title>
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+      }
+      #smiley {
+        margin: 0 auto;
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+      }
+      #smiley img {
+        padding: 5%;
+        height: 60%;
+        width: 60%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="smiley">
+      <img id="smiley-img" src="smiley-whoops.png" alt="">
+    </div>
+    <script src="smiley.js"></script>
+    <script>
+      document.getElementById('smiley-img').src = smileyFor(location.hostname);
+    </script>
+  </body>
+</html>
